@@ -66,11 +66,11 @@
                 
                 .smcp {
                     text-transform: lowercase;
-                    -moz-font-feature-settings:'smcp=1';
+                    font-feature-settings:"smcp","kern","liga";
                 }
                 
                 
-                body { background: white; color:#444444;}
+                body { background: white; color:#444444;font-feature-settings:"kern","liga";}
                 section { display: block; float: left; margin: 0; width: 100%; }
                 
                 #flypage_spec ul {
@@ -191,7 +191,8 @@
                     <script src="js/fontdrag.js" type="text/javascript" charset="utf-8"></script>
                     <script>
                         // Tabs
-                        $(function () {
+                         localStorage.clear();
+                         $(function () {
                           var tabContainers = $('div.tabs > div');
                           
                           $('div.tabs ul.nav-tabs a').click(function () {
@@ -1679,6 +1680,8 @@ The fungus continues to consume first the nerve cells and finally all the soft t
                             <div class="span12" contenteditable spellcheck="false">
                                 <p class="sizelabel">21px</p>
                                 <p style="font-size: 21px;">
+¢5  30¢   $25,000   67$   €5,234    17€    £423    120£   ¥6,000    234¥   ¤23    456¤</p>
+                                <p style="font-size: 21px;font-feature-settings:'kern','liga','onum';">
 ¢5  30¢   $25,000   67$   €5,234    17€    £423    120£   ¥6,000    234¥   ¤23    456¤</p>
                                 <p class="sizelabel">18px</p>
                                 <p style="font-size: 18px;">
